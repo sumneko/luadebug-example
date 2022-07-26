@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "type": "shell",
+    "windows": {
+        "options": {
+            "shell": {
+                "executable": "C:\\Windows\\System32\\cmd.exe",
+                "args": [
+                    "/c"
+                ]
+            }
+        }
+    },
+    "options": {
+        "cwd": "C:\\"
+    },
+    "tasks": [
+        {
+            "label": "run",
+            "command": [
+                "${workspaceRoot}\\bin\\lua-language-server.exe"
+            ]
+        }
+    ]
+}

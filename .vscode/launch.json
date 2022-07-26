@@ -5,10 +5,24 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "arg": [],
+            "name": "launch",
+            "program": "${workspaceFolder}/main.lua",
+            "request": "launch",
+            "stopOnEntry": true,
+            "type": "lua",
+        },
+        {
             "name": "attach",
             "request": "attach",
             "type": "lua",
-            "address": "127.0.0.1:12306"
+            "address": "127.0.0.1:12306",
+            "sourceMaps": [
+                [
+                    "./*",
+                    "${workspaceFolder}/*"
+                ]
+            ]
         },
     ]
 }
